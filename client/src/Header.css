@@ -1,0 +1,16 @@
+
+nav{
+    margin: 20px 40px;
+}
+a{
+    padding: 20px;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: goldenrod;
+}
+
+a:hover{
+    text-decoration:underline;
+   
+}
