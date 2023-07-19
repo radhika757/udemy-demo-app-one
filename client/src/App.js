@@ -5,17 +5,21 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Header from "./Header";
 import Error from "./pages/Error";
+import Product from "./pages/Product";
+import ProductDetails from "./pages/ProductDetails";
 
-function App() { 
+function App() {
   return (
     <div className="App">
       <Router>
-        <Header/>
+        <Header />
         <Routes>
-          <Route  path="/"  element={<Home/>} />
-          <Route  path="/about"  element={<About/>} />
-          <Route  path="/contact"  element={<Contact/>} />
-          <Route path="*" element={<Error/>} />
+          <Route path="/" index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/products" element={<Product />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
     </div>

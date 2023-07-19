@@ -2,7 +2,7 @@
 nav{
     margin: 20px 40px;
 }
-a{
+nav a{
     padding: 20px;
     list-style: none;
     text-decoration: none;
@@ -10,7 +10,10 @@ a{
     color: goldenrod;
 }
 
-a:hover{
+nav a:hover, nav a:active{
     text-decoration:underline;
    
+}
+.active{
+    text-decoration: underline;
 }
